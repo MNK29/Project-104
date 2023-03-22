@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Facial Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div>
+            <center>
+                <h1 id="heading">Facial Recognition Web App</h1>
+                <label>
+                    The model is trained for the following people:-
+                    <br>
+                    <b>Father | Mother | Brother | Sister</b>
+                </label>
+                <br><br>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h3 class="title">Webcam View :- </h3>
+                    <div id="camera"></div>
+                    <br><br>
+                    <button onclick="take_snapshot();" class="btn btn-success click">Capture Image</button>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12" id="divresult">
+                    <h3 class="label">Person :- </h3>
+                    <h3 id="person"></h3>
+                    <br><br>
+                    <h3 class="label">Accuracy :-</h3>
+                    <h3 id="accuracy"></h3>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h3 class="title">Snapshot :- </h3>
+                    <div id="result"></div>
+                    <br><br>
+                    <button onclick="check();" class="btn btn-success click">Identify Person</button>
+                </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

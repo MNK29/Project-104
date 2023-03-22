@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(to bottom, #ff9933 0%, #cccc00 100%);
+}
+
+#heading{
+    font-size: 50px;
+    font-family: 'Bungee Shade', cursive;
+    margin-top: 2.5%;
+    margin-bottom: 4%;
+    color: black;
+}
+
+label{
+    font-size: 20px;
+    color: darkgreen;
+    margin-bottom: 3%;
+}
+
+b{
+    font-size: 25px;
+    color: red;
+}
+
+.title{
+    font-size: 25px;
+    color: saddlebrown;
+    background-color: #cccc00;
+    width: fit-content;
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
+.click{
+    font-size: 20px !important;
+    border-radius: 20px;
+    border-color: rgb(37, 124, 86);
+    border-width: 5px;
+}
+
+#camera, #result{
+    margin-top: 4%;
+    width: 350;
+    height: 300;
+    box-shadow: 1px 1px 38px rgb(144, 14, 14);
+}
+
+.label{
+    font-size: 25px;
+    color: crimson;
+}
+
+#person, #accuracy{
+    font-size: 30px;
+    color: rgb(116, 172, 31);
+}
+
+#divresult{
+    margin-top: 8%;
+}
